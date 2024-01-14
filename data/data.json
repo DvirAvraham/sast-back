@@ -1,0 +1,28 @@
+{
+ "clientName":"clientName",
+ "title":"Emmys",
+ "finishDate":"today",
+ "isLimitation":true,
+ "limitations":[{"desc":"description0"},{"desc":"description1"}],
+ "criticalCount":1,
+ "highCount":0,
+ "mediumCount":0,
+ "lowCount":2,
+ "infoCount":2,
+ "totalCount":5,
+ "isCritical":true,
+ "isHigh":false,
+ "isMedium":true,
+ "isLow":false,
+ "isInfo":false,
+ "criticals":[
+     {"issueType":"SQLI","code":"test","details":"he system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laboriou","instances":[{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5},{"location":"sedrf","line":5}]},
+     {"issueType":"XSS","code":"test8","details":"he system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laboriou","instances":[{"location":"GYJ","line":5}]}
+ ],
+ "mediums":[
+     {"issueType":"MED","code":"testDD","details":"he system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laboriou","instances":[{"location":"sedrfDD","line":55}]},
+     {"issueType":"IUM","code":"test8DD","details":"he system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laboriou","instances":[{"location":"GYJDD","line":55}]}
+ ],
+ "libs":[{"name":"date-picker","version":"1.0","fixedIn":"[3.1, 3.3, 3.6]","notes":"notes"}]
+}
+
