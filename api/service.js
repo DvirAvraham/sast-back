@@ -15,7 +15,7 @@ module.exports = {
       let toolRes = await executeCommand()
       toolRes = computeData(toolRes)
       write(data,toolRes)
-      write(data)
+      // write(data)
     } catch (err) {
       console.log(err);
     }

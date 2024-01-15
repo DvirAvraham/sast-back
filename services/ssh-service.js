@@ -5,7 +5,7 @@ module.exports = {
   }
 
 const connectionOptions = {
-  host: '16.171.254.158',
+  host: '51.20.55.43',
   port: 22,
   username: 'ec2-user', 
   privateKey: require('fs').readFileSync('EC2 Test.pem'),
