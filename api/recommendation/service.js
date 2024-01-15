@@ -63,7 +63,6 @@ function updateById(updatedObject) {
 }
 
 function removeById(id) {
-  console.log(id);
   const database = readDatabase();
   const updatedDatabase = database.filter(obj => obj.id !== id);
 
