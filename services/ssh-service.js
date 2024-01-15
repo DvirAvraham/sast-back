@@ -1,14 +1,19 @@
 const Client = require('ssh2').Client;
+require('dotenv').config();
+
 
 module.exports = {
     executeCommand
   }
 
+const password = process.env.LIN_PASS;
+const username = process.env.LIN_USER;
+
 const connectionOptions = {
-  host: '51.20.55.43',
+  host: '172.16.120.139',
   port: 22,
-  username: 'ec2-user', 
-  privateKey: require('fs').readFileSync('EC2 Test.pem'),
+  username, 
+  password,
 };
 
 const commandToExecute = 'pwd'; // Replace with your desired command

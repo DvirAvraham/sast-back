@@ -9,9 +9,7 @@ module.exports = {
   async function generateReport(req, res) {
     try{
       const {body} = req
-      console.log(body);
-      // reportService.write(data)
-      // reportService.fetch(data)
+      reportService.fetch(data)
       // res.json(body);
         }catch(err){
        console.log('errrrrrr',err);

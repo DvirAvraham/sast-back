@@ -12,20 +12,20 @@ module.exports = {
 
   async function fetch(data){
     try {
+      console.time('Tool_Run_Time =>')
       let toolRes = await executeCommand()
-      toolRes = computeData(toolRes)
-      write(data,toolRes)
-      // write(data)
+      console.timeEnd('Tool_Run_Time =>')
+      data = computeData(data, toolRes)
+      write(data)
     } catch (err) {
       console.log(err);
     }
   }
 
-  async function write(data,toolRes){
-    
-    data.clientName = toolRes
-      const content = fs.readFileSync(
-              path.resolve(__dirname, '..\\templates\\' + "template" + ".docx"), "binary");
+  async function write(data){
+
+            const content = fs.readFileSync(
+              path.resolve(__dirname, '..\\..\\templates\\' + "template" + ".docx"), "binary");
               const zip = new PizZip(content)
               const doc = await _createDoc(zip,data)
               const buf = doc.getZip().generate({ type: "nodebuffer" });
@@ -36,11 +36,8 @@ module.exports = {
                       }
   }
 
-function computeData(data){
-    // console.log(0,data);
-    //   tempVar = data
-    // console.log(0.1,tempVar);
-    // write(data) 
+function computeData(data,toolRes){
+data.clientName = toolRes
     return data
   }
          
@@ -96,16 +93,12 @@ function computeData(data){
   }
 
   function _errorHandler(error) {
-      // console.log(JSON.stringify({ error: error }, replaceErrors)); 888888888888888888888888888888888888888888888888888888888888888888888888888
       if (error.properties && error.properties.errors instanceof Array) {
           const errorMessages = error.properties.errors
           .map(function (error) {
               return error.properties.explanation;
             })
             .join("\n");
-            console.log("errorMessages", errorMessages);
-            // errorMessages is a humanly readable message looking like this :
-            // 'The tag beginning with "foobar" is unopened'
         }
         throw error;
   }
