@@ -31,7 +31,6 @@ module.exports = {
   async function update(req, res) {
     try{
       const {body} = req
-      console.log(body);
       const updatedRec = recommendationService.updateById(body)
       res.json(updatedRec);
         }catch(err){
