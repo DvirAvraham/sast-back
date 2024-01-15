@@ -1,5 +1,5 @@
 const express = require("express");
-const { generateReport } = require("./api/controller");
+const { generateReport } = require("./api/report/controller");
 const cors = require("cors");
 const app = express();
 const http = require("http").createServer(app);
@@ -13,14 +13,16 @@ app.use(cors(corsOptions));
 
 app.use(express.json({ limit: '200mb' }));
 
-const reportRoutes = require("./api/routes");
+const reportRoutes = require("./api/report/routes");
+const recommendationRoutes = require("./api/recommendation/routes");
 
 app.use("/api/generate", reportRoutes);
+app.use("/api/recs", recommendationRoutes);
 
 http.listen(3001, () => {
   console.log("Server is running on port: " + 3001);
 });
 
-generateReport()
+
 
 
